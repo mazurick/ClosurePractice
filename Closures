@@ -1,0 +1,15 @@
+func double (_ value: Int) -> Int {
+    return value * 2
+}
+
+let doubleFunction = double
+doubleFunction(2)
+
+let numbers = [1, 2, 3, 4]
+let doubledNumbers = numbers.map(doubleFunction)
+
+// Closure expressions
+ 
+let tripledNumbers = numbers.map( { (value: Int) -> Int in return value * 3} )
+
+let quaddroopNumbers = numbers.map( { (value: Int) -> Int in return value * 4} )
